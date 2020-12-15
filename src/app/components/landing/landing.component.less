@@ -1,0 +1,74 @@
+
+/* mensaje bienvenida */
+
+.intro {
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+
+
+  display: block;
+}
+
+.msg-welcome {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+/* Buttons */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container a {
+  position: relative;
+  width: 300px;
+  height: 75px;
+  margin: 10px 0;
+  font-size: 24px;
+  color: #000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.container a:hover {
+  color: #fff;
+}
+
+.container a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: url(https://firebasestorage.googleapis.com/v0/b/psicored2-231ed.appspot.com/o/botones%2Fbtn-bg1.png?alt=media&token=8518d02e-7b7e-4e1f-943b-65893d482d2f);
+  background-size: cover;
+  transform-origin: left;
+  transition: 0.5s;
+}
+
+.container a:nth-child(2):before {
+  background: url(https://firebasestorage.googleapis.com/v0/b/psicored2-231ed.appspot.com/o/botones%2Fbtn-bg2.png?alt=media&token=3859f0d4-53eb-4842-a045-32fd1bdd6ddc);
+  background-size: cover;
+}
+
+.container a:hover:before {
+  width: 100%;
+}
+
+.container a span {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Fin botones */
